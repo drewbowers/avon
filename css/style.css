@@ -1,0 +1,498 @@
+/* adjusts for margins and padding in the grid. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ededed;
+}
+
+/* blue #00B0D8
+red #FF12A4*/
+
+* {
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* *******slider******* */
+
+.flex-direction-nav a:before {
+  content: '\276E';
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '\276F';
+}
+
+img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.buttonLinks {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.button {
+  text-align: center;
+  text-decoration: none;
+	display: flex;
+ /* margin: 1em auto; */
+  padding: 1em;
+  /*width: 135px;*/
+  background-color: #303841;
+  color: #eee;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .5s;
+  position: relative;
+}
+
+.button:hover {
+  background-color: #FF5722;
+  color: #eee;
+}
+
+/* *******header******* */
+
+.headerContainer {
+  background-image: url('../img/headerimg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: #333;
+  background-color: rgba(74, 74, 74, .6);
+  padding: 50px 0;
+  margin: 0;
+}
+
+header a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.pageTitle h1 {
+  color: #333;
+}
+
+/********************* hero********************* */
+
+.heroContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+.hero {
+  position: relative;
+  background-image: url('../img/headimgmob.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 300px;
+}
+
+
+.bodyCopy p {
+  margin-top: 0;
+}
+
+/* *******nav******* */
+
+.navButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  padding: .5em;
+  background-color: #303841;
+  border: solid #aaa;
+  border-width: 0 0 1px;
+}
+
+.navButton a {
+  color: #eee;
+  text-decoration: none;
+  padding: 0 0 0 .5em;
+}
+
+i {
+  font-size: 1em;
+  color: #eee;
+  padding: 0 1em 0 0;
+  transition: color .5s;
+}
+
+i:hover {
+  color: #FF5722;
+}
+
+#nav {
+  position: fixed;
+  top: 2em;
+  left: -72%;
+  width: 72%;
+  margin: 0;
+  height: 100%;
+  background-color: #303841;
+  /* background-color: rgba(0,0,0,.84); */
+  transition: left .5s;
+}
+
+#nav:target {
+  left: 0;
+}
+
+nav {
+  z-index: 1000;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  margin-top: .5em;
+}
+
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li ul {
+  display: none;
+}
+
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  margin-top: auto;
+  margin-left: 1em;
+  background: white;
+
+
+}
+
+nav li:hover ul li{
+  display:block;
+}
+
+nav li a {
+  color: #eee;
+  text-decoration: none;
+  display: block;
+  padding: .5em 1em;
+  transition: all .5s;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+nav li a:hover {
+  color: #eee;
+  text-decoration: none;
+  background-color: #FF5722;
+  color: #eee;
+}
+nav ul ul li {
+  background-color: #303841;
+
+}
+/* produces a blank line in mobile nav, but is
+hidden when on wider screens. */
+
+.hiddenLink {
+  display: block;
+}
+
+/* map */
+
+.mapCntr {
+  width: 100%;
+}
+
+/******************vid container**************/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/********************************************/
+/*General styles*/
+/********************************************/
+
+
+.site {
+	background: #ededed;
+}
+
+.masthead,
+.main-content,
+.footer {
+	padding: 1em 2em;
+}
+.sidebar {
+	padding: 1em;
+}
+.main-content {
+	background: white;
+}
+
+.main-content h2 {
+  color: #00ADB5;
+}
+
+
+.masthead {
+	background: #2185C5;
+	color: white;
+}
+
+.sidebar {
+	background: white;
+}
+
+.twin {
+	background: #ededed;
+}
+
+
+
+.colophon {
+	padding: 2em;
+	background: #3E454C;
+	color: white;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+.socialicons {
+  /*display: flexboxgrid;*/
+
+}
+.socialicons .fa {
+  display: inline-block;
+  vertical-align:middle;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  opacity: .8;
+  transition: all .2s ease;
+ padding: 0;
+}
+.socialicons .fa:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.socialicons .circle {
+  border-radius: 50%;
+}
+
+.socialicons .custom-color {
+  color: #ff5722;
+  background: #00ADB5;
+}
+/********************************************/
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+	.site {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 600px) {
+	@supports (display: grid) {
+
+		.site {
+			display: grid;
+			grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+			grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+		}
+
+		.masthead,
+		.colophon {
+			grid-column: span 8;
+		}
+
+		.main-content {
+			grid-column: 2/6;
+
+		}
+
+		.sidebar {
+			grid-column: 6/8;
+		}
+
+		.twin {
+			grid-column: 2/8;
+			grid-row: 3/4;
+		}
+
+/* MEDIA QUERIES */
+
+/********************************************/
+
+@media only screen and (min-width: 30em) {
+  .hero {
+    position: relative;
+    background-image: url('../img/headerimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 300px;
+  }
+  .navButton {
+    display: none;
+  }
+  #nav {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #303841;
+    position: static;
+  }
+
+  nav {
+    margin: 0;
+    z-index: 1000;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: #303841;
+
+
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav li a {
+    display: block;
+  }
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+nav ul li ul li {
+  background-color: #303841;
+  text-align: left;
+
+}
+
+nav ul li:hover  ul {
+    display:inherit;
+    z-index: 1001;
+}
+
+nav ul ul li {
+    min-width:170px;
+    display:list-item;
+    position: relative;
+}
+
+
+  .hiddenLink {
+    display: none;
+  }
+  img {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+
+/* Large and up */
+
+@media screen and (min-width: 64em) {}
+
+/*******************  text  ********************/
+
+h1, h2, h3, h4, h5, h6, {
+  font-family: 'Francois One', sans-serif;
+}
+
+h4, h5, h6, p {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  color: #eee;
+	font-size: 2.2rem;
+}
+
+h2{
+	font-size:2rem;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+h2, h3 {
+  color: #EEEEEE;
+  font-weight: 300;
+}
+
+
+
+footer {
+  background-color: #303841;
+  padding: 10px 0;
+  color: #eee;
+  font-size: .75rem;
+}
+
+/********************* media *******************/
+/********************* now playing *******************/
+
+/******************  contact  ******************/
+
+/*************** helper classes ****************/
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
